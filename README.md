@@ -1,6 +1,6 @@
 # LoadingButtton
 
-<img src="https://github.com/alireza12t/LoadingButtton/blob/main/LoadingButton.gif" width="300" height="200" />
+<img src="https://github.com/alireza12t/LoadingButtton/blob/main/LoadingButton.gif" width="300" height="800" />
 
 <!-- ![Alt Text](https://github.com/alireza12t/LoadingButtton/blob/main/LoadingButton.gif) -->
 
