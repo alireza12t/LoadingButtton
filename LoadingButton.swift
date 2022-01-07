@@ -10,7 +10,17 @@ import UIKit
     private var enabledState: Bool? = nil
     
     @IBInspectable public var animationDuration: Double = 1.2
-    @IBInspectable public var loadingText: String = "Loading..."
+    @IBInspectable public var loadingText: String = "Loading..." {
+        didSet {
+            DispatchQueue.main.async { [self] in
+                loadingText.width(withConstrainedHeight: self.bounds.height, font: self.titleLabel?.font ?? .systemFont(ofSize: 18, weight: .bold)) { [self] (width) in
+                    minWidth = width + 30
+                    widthConstraint = widthAnchor.constraint(equalToConstant: originalWidth)
+                    NSLayoutConstraint.activate([self.widthConstraint])
+                }
+            }
+        }
+    }
     @IBInspectable public var loaddingBackgroundColor: UIColor = .systemGray
     
     public var isAnimating: Bool = false {
@@ -134,7 +144,7 @@ import UIKit
         }
     }
     
-    @IBInspectable public var cornerRadius: CGFloat = 0 {
+    @IBInspectable public var cornerRadius: CGFloat = 10 {
         didSet {
             self.layer.cornerRadius = cornerRadius
         }
