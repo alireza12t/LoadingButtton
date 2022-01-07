@@ -1,6 +1,6 @@
 # LoadingButtton
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/alireza12t/LoadingButtton/blob/main/LoadingButton.gif)
 
 
 
