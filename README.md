@@ -1,5 +1,9 @@
 # LoadingButtton
 
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+
+
 ## Usage/Examples
 
 Add button extendded from LoadingButton in the view and make it center horizontally.
